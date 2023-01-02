@@ -1,0 +1,43 @@
+@use './../../styles/variables'
+@use './../../styles/mixins'
+
+.header
+    width: 100vw
+    height: 60px
+    display: flex 
+    justify-content: center
+    align-items: center
+
+    .logo
+        width: 180px
+        height: 20px
+
+    .container-content
+        width: 75%
+        @include mixins.align-center
+        flex-direction: row
+        justify-content: space-between
+
+    .container-navbar
+        width: 55%
+        @include mixins.align-center
+        flex-direction: row
+        justify-content: space-between
+
+        nav
+
+            button
+                background-color: variables.$pure-white
+                color: variables.$pure-black
+                border: none
+                margin: 10px
+                font-weight: bold
+    
+    button
+        background-color: variables.$pure-black
+        color: variables.$pure-white
+        width: 120px
+        height: 35px
+        border: none
+        font-weight: bold
+
