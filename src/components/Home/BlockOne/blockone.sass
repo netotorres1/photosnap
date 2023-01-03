@@ -1,0 +1,98 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.section
+    width: 100vw
+    height: 600px
+    @include mixins.align-center
+    flex-direction: row
+
+    .section-content 
+        width: 40%
+        height: 100%
+        background-color: variables.$pure-black
+        color: variables.$pure-white
+        flex-direction: column
+        @include mixins.align-center 
+
+
+        h2 
+            font-size: 35px
+            text-transform: uppercase
+            width: 50%
+            margin-bottom: 20px
+
+        p
+            width: 50%
+            color: variables.$ligh-grey
+            line-height: 30px
+
+        button
+            text-transform: uppercase 
+            padding: 15px
+            background-color: transparent 
+            color: variables.$pure-white
+            letter-spacing: 2px
+            position: relative
+            right: 100px
+            top:20px
+
+        button:hover
+            text-decoration: underline
+            cursor: pointer
+
+    .section-content-white
+        width: 40%
+        height: 100%
+        background-color: variables.$pure-white
+        color: variables.$pure-black
+        flex-direction: column
+        @include mixins.align-center 
+
+
+        h2 
+            font-size: 35px
+            text-transform: uppercase
+            width: 50%
+            margin-bottom: 20px
+
+        p
+            width: 50%
+            color: variables.$pure-black
+            line-height: 30px
+
+        button
+            border: none
+            text-transform: uppercase 
+            padding: 15px
+            background-color: transparent 
+            color: variables.$pure-black
+            letter-spacing: 2px
+            position: relative
+            right: 100px
+            top:20px
+
+        button:hover
+            text-decoration: underline
+            cursor: pointer
+    
+    .Img 
+        width: 60%
+        height: 100%
+        background-color: red
+        background-image: url('./../../../assets/home/desktop/create-and-share.jpg')
+        background-size: cover
+
+    .Img2
+        width: 60%
+        height: 100%
+        background-color: red
+        background-image: url('./../../../assets/home/desktop/beautiful-stories.jpg')
+        background-size: cover
+
+    .Img3
+        width: 60%
+        height: 100%
+        background-color: red
+        background-image: url('./../../../assets/home/desktop/designed-for-everyone.jpg')
+        background-size: cover

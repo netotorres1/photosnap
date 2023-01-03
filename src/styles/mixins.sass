@@ -4,3 +4,33 @@
     display: flex 
     align-items: center
     justify-content: center
+
+@mixin card-format 
+    width: 25%
+    height: 100%
+    background-size: cover
+    display: flex 
+    align-items: flex-end
+
+@mixin content-card
+    display: flex 
+    flex-direction: column
+    width: 100%
+    color: variables.$pure-white
+    padding: 30px
+
+@mixin button-card
+    margin-top: 20px
+    background-color: transparent
+    padding: 15px
+    border-left: none 
+    border-right: none
+    border-bottom: none 
+    border-top: 2px solid variables.$pure-white
+    color: variables.$pure-white
+
+@mixin button 
+    padding: 15px
+    color: variables.$pure-white
+    background-color: transparent
+    text-transform: uppercase

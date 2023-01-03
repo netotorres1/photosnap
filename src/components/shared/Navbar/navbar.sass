@@ -1,5 +1,5 @@
-@use './../../styles/variables'
-@use './../../styles/mixins'
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
 
 .header
     width: 100vw
@@ -32,6 +32,10 @@
                 border: none
                 margin: 10px
                 font-weight: bold
+
+            button:hover
+                color: variables.$ligh-grey
+                cursor: pointer
     
     button
         background-color: variables.$pure-black
@@ -40,4 +44,8 @@
         height: 35px
         border: none
         font-weight: bold
+
+    button:hover
+        background-color: variables.$ligh-grey
+        color: variables.$pure-black
 

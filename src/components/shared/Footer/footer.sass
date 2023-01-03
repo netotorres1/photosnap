@@ -1,0 +1,53 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.footer
+    width: 100vw
+    height: 300px
+    color: variables.$pure-white
+    background-color: variables.$pure-black
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .container-content
+        width: 75%
+        height: 70%
+        display: flex 
+        justify-content: space-between
+        flex-direction: row
+        align-items: center
+
+        .social-media
+            flex: 1
+            height: 100%
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+
+            img 
+                height: 20px
+                margin: 20px
+                svg
+                    fill: #fff
+
+        .nav-menu
+            flex: 2
+            display: flex
+            flex-direction: column
+
+            button
+                @include mixins.button
+        .btn
+            flex: 7
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-end
+
+            span
+                color: variables.$ligh-grey
+
+            button
+                @include mixins.button

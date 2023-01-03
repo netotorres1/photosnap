@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.sass'
 
-const Logo = require('./../../assets/shared/desktop/logo.svg').default;
+const Logo = require('./../../../assets/shared/desktop/logo.svg').default;
 
 function Navbar() {
   return (

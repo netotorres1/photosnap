@@ -1,0 +1,77 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+    
+.section
+    width: 100vw
+    @include mixins.align-center 
+    flex-direction: row
+    height: 500px
+    
+    .themountain
+        background-image: url('./../../../assets/stories/desktop/mountains.jpg')
+        @include mixins.card-format
+
+        div
+            @include mixins.content-card
+            
+            button 
+                @include mixins.button-card
+            button:hover
+                cursor: pointer
+        
+    .themountain:hover
+            position: relative 
+            bottom:10px
+            border-bottom: 3px solid variables.$main-accent   
+        
+
+    .cityscapes
+        background-image: url('./../../../assets/stories/desktop/cityscapes.jpg')
+        @include mixins.card-format
+
+        div
+            @include mixins.content-card
+            
+            button 
+                @include mixins.button-card
+            button:hover
+                cursor: pointer
+                
+    .cityscapes:hover
+        position: relative 
+        bottom:10px
+        border-bottom: 3px solid variables.$main-accent   
+        
+    .voyage
+        background-image: url('./../../../assets/stories/desktop/18-days-voyage.jpg')
+        @include mixins.card-format
+        
+        div
+            @include mixins.content-card
+            
+            button 
+                @include mixins.button-card
+            button:hover
+                cursor: pointer
+
+    .voyage:hover
+        position: relative 
+        bottom:10px
+        border-bottom: 3px solid variables.$main-accent
+
+    .architecturals
+        background-image: url('./../../../assets/stories/desktop/architecturals.jpg')
+        @include mixins.card-format
+        
+        div
+            @include mixins.content-card
+            
+            button 
+                @include mixins.button-card
+            button:hover
+                cursor: pointer
+
+    .architecturals:hover
+        position: relative 
+        bottom:10px
+        border-bottom: 3px solid variables.$main-accent
