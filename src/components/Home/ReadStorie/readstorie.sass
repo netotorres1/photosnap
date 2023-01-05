@@ -1,15 +1,23 @@
 @use './../../../styles/variables'
 @use './../../../styles/mixins'
     
-.section
+.section-read-story
     width: 100vw
     @include mixins.align-center 
     flex-direction: row
     height: 500px
+    @include mixins.tablet 
+        flex-wrap: wrap 
+        height: 500px
+        margin-bottom: 500px
+
     
     .themountain
         background-image: url('./../../../assets/stories/desktop/mountains.jpg')
         @include mixins.card-format
+        @include mixins.tablet 
+            width: 50%
+        
 
         div
             @include mixins.content-card
@@ -28,6 +36,8 @@
     .cityscapes
         background-image: url('./../../../assets/stories/desktop/cityscapes.jpg')
         @include mixins.card-format
+        @include mixins.tablet 
+            width: 50%
 
         div
             @include mixins.content-card
@@ -45,6 +55,8 @@
     .voyage
         background-image: url('./../../../assets/stories/desktop/18-days-voyage.jpg')
         @include mixins.card-format
+        @include mixins.tablet 
+            width: 50%
         
         div
             @include mixins.content-card
@@ -62,6 +74,8 @@
     .architecturals
         background-image: url('./../../../assets/stories/desktop/architecturals.jpg')
         @include mixins.card-format
+        @include mixins.tablet 
+            width: 50%
         
         div
             @include mixins.content-card

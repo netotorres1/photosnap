@@ -8,7 +8,7 @@ type Props = {}
 
 function ReadStorie({}: Props) {
   return (
-    <section className='section'>
+    <section className='section-read-story'>
         <div className='themountain'>
             <div>
                 <h2>The Mountain</h2>

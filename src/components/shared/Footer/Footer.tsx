@@ -13,7 +13,7 @@ type Props = {}
 function Footer({}: Props) {
   return (
     <footer className='footer'>
-        <div className='container-content'>
+        <div className='container-content-footer'>
             <div className='social-media'>
                 <img src={logo} alt='logo' className='logo' />
                 <div>

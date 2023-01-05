@@ -1,11 +1,14 @@
 @use './../../../styles/variables'
 @use './../../../styles/mixins'
 
-.section
+.section-block-four
     width: 100vw
     height: 500px
     display: flex
     justify-content: center
+    @include mixins.tablet 
+        height: 1000px
+        margin-top: 600px
 
     .container-content
         display: flex 
@@ -13,6 +16,8 @@
         align-items: center
         justify-content: space-between
         width: 75%
+        @include mixins.tablet 
+            flex-direction: column
 
         div
             display: flex
@@ -21,6 +26,9 @@
             
             height: 100%
             width: 30%
+            @include mixins.tablet 
+                width: 80%
+                margin-bottom: 100px
 
             img 
                 margin-bottom: 40px

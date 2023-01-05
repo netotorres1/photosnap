@@ -7,10 +7,14 @@
     display: flex 
     justify-content: center
     align-items: center
+    @include mixins.tablet
+        width: 768px
 
     .logo
         width: 180px
         height: 20px
+        @include mixins.tablet
+            margin: 20px
 
     .container-content
         width: 75%
@@ -18,11 +22,17 @@
         flex-direction: row
         justify-content: space-between
 
+        @include mixins.tablet
+            width: 768px
+
+
     .container-navbar
         width: 55%
         @include mixins.align-center
         flex-direction: row
         justify-content: space-between
+        @include mixins.tablet
+            width: 70%
 
         nav
 
@@ -32,6 +42,8 @@
                 border: none
                 margin: 10px
                 font-weight: bold
+                @include mixins.tablet
+                    margin: 0px
 
             button:hover
                 color: variables.$ligh-grey
@@ -44,6 +56,8 @@
         height: 35px
         border: none
         font-weight: bold
+        @include mixins.tablet
+            margin: 20px
 
     button:hover
         background-color: variables.$ligh-grey

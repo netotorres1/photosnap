@@ -12,7 +12,7 @@ type Props = {}
 
 function BlockFour({}: Props) {
   return (
-    <section className='section'>
+    <section className='section-block-four'>
         <div className='container-content'>
             <div>
                 <img src={responsive} />
