@@ -9,12 +9,17 @@
     align-items: center
     @include mixins.tablet
         width: 768px
+    @include mixins.mobile
+        width: 380px
 
     .logo
         width: 180px
         height: 20px
         @include mixins.tablet
             margin: 20px
+
+        @include mixins.mobile
+        width: 150px
 
     .container-content
         width: 75%
@@ -31,35 +36,90 @@
         @include mixins.align-center
         flex-direction: row
         justify-content: space-between
-        @include mixins.tablet
-            width: 70%
 
-        nav
+        .navbar
+            width: 100%
+            padding: 20px
+            display: flex
+            justify-content: space-between
+            @include mixins.mobile 
+            display: none
 
-            button
-                background-color: variables.$pure-white
-                color: variables.$pure-black
+            div
+                
+                button
+                    background-color: variables.$pure-white
+                    color: variables.$pure-black
+                    border: none
+                    margin: 10px
+                    font-weight: bold
+                    @include mixins.tablet
+                        margin: 10px
+
+                &:hover
+                    color: variables.$ligh-grey
+                    cursor: pointer
+                
+            .get-invite
+                background-color: black
+                color: variables.$pure-white
+                width: 150px
+                text-transform: uppercase
+                letter-spacing: 2px
                 border: none
-                margin: 10px
-                font-weight: bold
-                @include mixins.tablet
-                    margin: 0px
-
-            button:hover
-                color: variables.$ligh-grey
-                cursor: pointer
     
-    button
-        background-color: variables.$pure-black
-        color: variables.$pure-white
-        width: 120px
-        height: 35px
-        border: none
-        font-weight: bold
-        @include mixins.tablet
-            margin: 20px
+    .btnMenu
+        display: none
+        @include mixins.mobile 
+            display: flex
+            background-color: transparent
+            width: 70px
+            border: none
+
 
     button:hover
         background-color: variables.$ligh-grey
         color: variables.$pure-black
+
+    .open
+        background-color: variables.$pure-white
+        width: 380px
+        position: absolute
+        top: 60px
+        right: 1px
+        display: flex  
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+        height: 250px
+
+        .get-invite
+            padding: 15px
+            background-color: variables.$pure-black
+            color: white
+            border: none
+            width: 80%
+            margin-bottom: 30px
+            margin-top: 20px
+
+        .btnPricing
+            width: 300px
+            border-bottom: 2px solid variables.$ligh-grey
+
+        div
+            display: flex
+            flex-direction: column
+            height: 70%
+            justify-content: space-between
+
+            button
+                padding: 15px
+                background-color: variables.$pure-white
+                font-size: 20px
+                border: none
+                font-weight: bold
+
+    
+ 
+
 

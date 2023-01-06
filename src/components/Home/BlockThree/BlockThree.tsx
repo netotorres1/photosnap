@@ -8,7 +8,7 @@ function BlockThree() {
             <p>We provide design templates to ensure your stories look terrific. Easily add 
                 photos, text, embed maps and media from other networks. Then share your story 
                 with everyone.</p>
-            <button>Get an invite</button>
+            <button>View the stories</button>
         </div>
         <div className='Img3'>
         </div>

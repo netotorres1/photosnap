@@ -9,6 +9,8 @@
     display: flex
     align-items: center
     justify-content: center
+    @include mixins.mobile
+        height: 550px
 
     .container-content-footer
         width: 75%
@@ -20,6 +22,8 @@
         @include mixins.tablet 
             width: 85%
             height: 80%
+        @include mixins.mobile
+            flex-direction: column
             
         .social-media
             flex: 1
@@ -31,8 +35,6 @@
             img 
                 height: 20px
                 margin: 20px
-                svg
-                    fill: #fff
 
         .nav-menu
             flex: 2
@@ -41,6 +43,10 @@
             @include mixins.tablet 
                 flex-direction: row
                 position: absolute
+            @include mixins.mobile
+                flex-direction: column
+                position: relative
+                margin-bottom: 50px
 
             button
                 @include mixins.button
@@ -51,6 +57,8 @@
             flex-direction: column
             justify-content: space-between
             align-items: flex-end
+            @include mixins.mobile
+            align-items: center
              
 
             span

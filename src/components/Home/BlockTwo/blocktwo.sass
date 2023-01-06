@@ -1,49 +1,77 @@
 @use './../../../styles/variables'
 @use './../../../styles/mixins'
 
-.section
+.section2
     width: 100vw
     height: 600px
     @include mixins.align-center
     flex-direction: row
+    @include mixins.mobile
+        flex-direction: column
+        height: 1000px
 
-    .section-content 
+    .section-content-white
         width: 40%
         height: 100%
-        background-color: variables.$pure-black
-        color: variables.$pure-white
+        background-color: variables.$pure-white
+        color: variables.$pure-black
         flex-direction: column
         @include mixins.align-center 
+        @include mixins.tablet
+            width: 80%
+            height: 100%
+        @include mixins.mobile 
+            width: 100%
+
 
         h2 
             font-size: 35px
             text-transform: uppercase
             width: 50%
             margin-bottom: 20px
+            @include mixins.tablet
+                width: 75%
+            @include mixins.mobile 
+                width: 65%
+                position: relative
+                right: 30px
 
         p
             width: 50%
-            color: variables.$ligh-grey
+            color: variables.$pure-black
             line-height: 30px
+            @include mixins.tablet
+                width: 75%
+                font-size: 15px
+            @include mixins.mobile 
+                width: 80%
 
         button
+            border: none
             text-transform: uppercase 
             padding: 15px
             background-color: transparent 
-            color: variables.$pure-white
+            color: variables.$pure-black
             letter-spacing: 2px
             position: relative
             right: 100px
             top:20px
+            @include mixins.mobile 
+                right: 75px
 
-        button:hover
+            &:hover
             text-decoration: underline
             cursor: pointer
 
-    
-    .Img 
+    .Img2
         width: 60%
         height: 100%
         background-color: red
         background-image: url('./../../../assets/home/desktop/beautiful-stories.jpg')
         background-size: cover
+        @include mixins.tablet
+            background-image: url('./../../../assets/home/tablet/beautiful-stories.jpg')
+        
+        @include mixins.mobile 
+            width: 100%
+            background-image: url('./../../../assets/home/mobile/beautiful-stories.jpg')
