@@ -46,6 +46,8 @@
             @include mixins.mobile 
                 width: 80%
 
+      
+
         button
             text-transform: uppercase 
             padding: 15px
@@ -58,6 +60,8 @@
             border: none
             @include mixins.mobile 
                 right: 95px
+            @include mixins.tablet
+                right: 80px
 
 
         button:hover
@@ -110,6 +114,9 @@
             top:20px
             @include mixins.mobile 
                 right: 75px
+        .btnblocktree
+            right: 65px
+            
 
         button:hover
             text-decoration: underline

@@ -1,0 +1,96 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+main
+    width: 100vw
+    height: 2000px
+    @include mixins.tablet
+        width: 768px
+        height: 4000px
+        display: flex
+        flex-wrap: wrap
+    @include mixins.mobile
+        height: 8000px
+    div
+        width: 25%
+        height: 500px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        color: variables.$pure-white
+        @include mixins.tablet
+            width: 50%
+        @include mixins.mobile
+            width: 100%
+
+        &:hover
+            position: relative
+            bottom: 10px
+            border: 2px solid variables.$main-accent
+
+        button 
+            padding: 15px
+            text-align: left
+            color: variables.$pure-white
+            background-color: transparent
+            border: none
+            width: 90%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+        div
+            width: 90%
+            margin: 20px
+
+    .themountain
+        background-image: url('./../../../assets/stories/desktop/mountains.jpg') 
+        background-size: cover
+    .benjamincruz
+        background-image: url('./../../../assets/stories/desktop/cityscapes.jpg') 
+        background-size: cover
+    .alexei
+        background-image: url('./../../../assets/stories/desktop/18-days-voyage.jpg') 
+        background-size: cover
+    .architecturals
+        background-image: url('./../../../assets/stories/desktop/architecturals.jpg') 
+        background-size: cover
+    .timothy
+        background-image: url('./../../../assets/stories/desktop/world-tour.jpg') 
+        background-size: cover
+    .willian
+        background-image: url('./../../../assets/stories/desktop/unforeseen-corners.jpg') 
+        background-size: cover
+    .tim
+        background-image: url('./../../../assets/stories/desktop/king-on-africa.jpg') 
+        background-size: cover
+    .felicua
+        background-image: url('./../../../assets/stories/desktop/trip-to-nowhere.jpg') 
+        background-size: cover
+    .mohammed
+        background-image: url('./../../../assets/stories/desktop/rage-of-the-sea.jpg') 
+        background-size: cover
+    .running-free
+        background-image: url('./../../../assets/stories/desktop/running-free.jpg') 
+        background-size: cover
+    .lammar
+        background-image: url('./../../../assets/stories/desktop/behind-the-waves.jpg') 
+        background-size: cover
+    .samantha
+        background-image: url('./../../../assets/stories/desktop/calm-waters.jpg') 
+        background-size: cover
+    .benjamin
+        background-image: url('./../../../assets/stories/desktop/milky-way.jpg') 
+        background-size: cover
+    .mohamed
+        background-image: url('./../../../assets/stories/desktop/dark-forest.jpg') 
+        background-size: cover
+    .michelle
+        background-image: url('./../../../assets/stories/desktop/somwarpet.jpg') 
+        background-size: cover
+    .william
+        background-image: url('./../../../assets/stories/desktop/land-of-dreams.jpg') 
+        background-size: cover
+             
+            
+            

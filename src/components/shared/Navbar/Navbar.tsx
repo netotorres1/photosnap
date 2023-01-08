@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { Link } from 'react-router-dom';
 import './navbar.sass'
 
 import {MdMenu, MdClose} from 'react-icons/md'
@@ -17,19 +18,19 @@ function Navbar() {
   return (
     <header className='header'>
         <div className='container-content'>
-            <img src={Logo} alt='Logo' className='logo' />
+            <Link to={'/'}><img src={Logo} alt='Logo' className='logo' /></Link>
             <div className='container-navbar'>
                 <nav className={openMenu !== true ? 'navbar' : 'open'} >
                     <div>
-                      <button>Stories</button>
-                      <button>Features</button>
-                      <button className='btnPricing'>Pricing</button>
+                      <button><Link to={'/stories'}>Stories</Link></button>
+                      <button><Link to={'/features'}>Features</Link></button>
+                      <button className='btnPricing'><Link to={'/pricing'}>Pricing</Link></button>
                     </div>
                     <button className='get-invite'>Get an invite</button>
                 </nav>
             </div>
         </div>
-        <button onClick={handleOpen} className='btnMenu'>{openMenu == true ? <MdMenu size={30} color={'#000'}/> : <MdClose size={30} color={'#000'}/>}</button>
+        <button onClick={handleOpen} className='btnMenu'>{openMenu == false ? <MdMenu size={30} color={'#000'}/> : <MdClose size={30} color={'#000'}/>}</button>
     </header>
   )
 }

@@ -1,0 +1,58 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.section-features
+    width: 100vw
+    height: 500px
+    display: flex
+    @include mixins.mobile 
+        flex-direction: column-reverse
+        height: 700px
+
+    .container-features-text
+        width: 40%
+        height: 100%
+        background-color: variables.$pure-black
+        color: variables.$pure-white
+        display: flex
+        flex-direction: row
+        align-items: center
+        @include mixins.tablet 
+            width: 60%
+        @include mixins.mobile 
+            width: 100%
+        
+        
+        div 
+            margin-left: 120px
+            @include mixins.tablet 
+                margin-left: 40px
+            h2
+                width: 40%
+                font-size: 65px
+                font-weight: 500
+                text-align: left
+                text-transform: uppercase
+                letter-spacing: 3px
+                @include mixins.tablet 
+                    font-size: 50px
+                    margin-bottom: 20px
+            p
+                width: 70%
+                color: variables.$ligh-grey
+                @include mixins.tablet 
+                    width: 95%
+    
+    .img
+        background-image: url('./../../../assets/features/desktop/hero.jpg')
+        background-size: cover
+        width: 60%
+        height: 100%
+
+        @include mixins.tablet 
+            background-image: url('./../../../assets/features/tablet/hero.jpg')
+            width: 40%
+        @include mixins.mobile 
+            background-image: url('./../../../assets/features/mobile/hero.jpg')
+            width: 100%
+        

@@ -11,6 +11,9 @@
         width: 768px
     @include mixins.mobile
         width: 380px
+        position: fixed
+        z-index: 1
+        background-color: variables.$pure-white
 
     .logo
         width: 180px
@@ -29,6 +32,7 @@
 
         @include mixins.tablet
             width: 768px
+        
 
 
     .container-navbar
@@ -67,6 +71,7 @@
                 text-transform: uppercase
                 letter-spacing: 2px
                 border: none
+                
     
     .btnMenu
         display: none
@@ -75,6 +80,7 @@
             background-color: transparent
             width: 70px
             border: none
+            margin: 20px
 
 
     button:hover
@@ -92,6 +98,7 @@
         align-items: center
         flex-direction: column
         height: 250px
+        
 
         .get-invite
             padding: 15px

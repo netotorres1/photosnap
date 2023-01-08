@@ -1,0 +1,79 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.featured
+    width: 100vw
+    height: 700px
+    background-image: url('./../../../assets/stories/desktop/moon-of-appalacia.jpg')
+    background-size: cover
+    display: flex
+    justify-content: center
+    @include mixins.tablet
+        background-image: url('./../../../assets/stories/tablet/moon-of-appalacia.jpg')
+        height: 550px
+    @include mixins.mobile
+        background-image: url('./../../../assets/stories/mobile/moon-of-appalacia.jpg')
+        display:flex
+        flex-direction: column
+        margin-bottom: 500px
+
+    .container-featured-content
+        width: 80%
+        display: flex
+        align-items: center
+        color: variables.$ligh-grey
+        @include mixins.mobile
+            width: 100%
+            background-color: black
+            position: relative 
+            top: 400px
+
+        div
+            width: 30%
+            height: 60%
+            @include mixins.tablet 
+                width: 60%
+            @include mixins.mobile
+                display: flex 
+                flex-direction: column
+                background-color: black
+                height: 100%
+                width: 80%
+                position: relative 
+                left: 30px
+            .uppercase
+                text-transform: uppercase
+                @include mixins.mobile
+                margin-top: 30px
+        
+            p
+                margin-bottom: 25px
+                
+
+            h2
+                font-size: 50px
+                text-transform: uppercase
+                @include mixins.tablet 
+                    font-size: 35px
+                @include mixins.mobile
+                    width: 60%
+                    text-align: left
+                
+            
+            
+            span
+                font-weight: bold
+            
+            button
+                width: 250px
+                height: 50px
+                background-color: transparent 
+                color: variables.$ligh-grey
+                border: none
+                text-transform: uppercase
+                @include mixins.mobile
+                    position: relative
+                    right: 21px
+                    margin-bottom: 20px
+            img
+                margin-left: 25px

@@ -2,9 +2,9 @@ import React from 'react'
 
 import './blocktwo.sass'
 
-type Props = {}
+const arrow = require('./../../../assets/shared/desktop/arrow.svg').default;
 
-function BlockTwo({}: Props) {
+function BlockTwo() {
   return (
     <section className='section2'>
         <div className='Img2'>
@@ -14,7 +14,7 @@ function BlockTwo({}: Props) {
             <p>We provide design templates to ensure your stories look terrific. Easily add 
                 photos, text, embed maps and media from other networks. Then share your story 
                 with everyone.</p>
-            <button>View the stories</button>
+            <button>View the stories <img alt='button' src={arrow} /></button>
         </div>
     </section>
   )
