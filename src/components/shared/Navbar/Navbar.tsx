@@ -30,7 +30,7 @@ function Navbar() {
                 </nav>
             </div>
         </div>
-        <button onClick={handleOpen} className='btnMenu'>{openMenu == false ? <MdMenu size={30} color={'#000'}/> : <MdClose size={30} color={'#000'}/>}</button>
+        <button onClick={handleOpen} className='btnMenu'>{openMenu === false ? <MdMenu size={30} color={'#000'}/> : <MdClose size={30} color={'#000'}/>}</button>
     </header>
   )
 }
