@@ -63,7 +63,7 @@ function Cards() {
         </div>
         <div className='felicua'>
             <div>
-            <span>March 21st 2020</span>
+            <p>March 21st 2020</p>
                 <h2>The Trip to Nowhere</h2>
                 <span>by Felicia Rourke</span>
                 <button>Read Story<img alt='button' src={arrow} /></button>

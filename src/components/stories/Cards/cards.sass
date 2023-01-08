@@ -4,11 +4,12 @@
 main
     width: 100vw
     height: 2000px
+    display: flex
+    flex-wrap: wrap
     @include mixins.tablet
         width: 768px
         height: 4000px
-        display: flex
-        flex-wrap: wrap
+
     @include mixins.mobile
         width: 380px
         height: 8000px
@@ -19,6 +20,7 @@ main
         flex-direction: column
         justify-content: flex-end
         color: variables.$pure-white
+        transition: .4s
         @include mixins.tablet
             width: 50%
         @include mixins.mobile
@@ -27,15 +29,19 @@ main
         &:hover
             position: relative
             bottom: 10px
-            border: 2px solid variables.$main-accent
-
+        span
+                
         button 
+            margin-top: 10px
             padding: 15px
             text-align: left
-            color: variables.$pure-white
+            color: variables.$ligh-grey
             background-color: transparent
-            border: none
-            width: 90%
+            border: 1px solid white
+            border-bottom: none
+            border-right: none 
+            border-left: none
+            width: 100%
             display: flex
             flex-direction: row
             justify-content: space-between
