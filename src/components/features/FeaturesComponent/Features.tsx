@@ -1,10 +1,6 @@
-import React from 'react'
-
 import './features.sass'
 
-type Props = {}
-
-function Features({}: Props) {
+function Features() {
   return (
     <section className='section-features'>
         <div className='container-features-text'>

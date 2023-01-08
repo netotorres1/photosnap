@@ -20,7 +20,7 @@ function Navbar() {
         <div className='container-content'>
             <Link to={'/'}><img src={Logo} alt='Logo' className='logo' /></Link>
             <div className='container-navbar'>
-                <nav className={openMenu !== true ? 'navbar' : 'open'} >
+                <nav className={openMenu === false ? 'navbar' : 'open'} >
                     <div>
                       <button><Link to={'/stories'}>Stories</Link></button>
                       <button><Link to={'/features'}>Features</Link></button>

@@ -14,37 +14,37 @@ function Functions() {
     <section className='main-content-functions'>
         <div className='content-functions-container'>
             <div>
-                <img src={Responsive} />
+                <img alt='responsive' src={Responsive} />
                 <h2>100% Responsive</h2>
                 <p>No matter which the device you’re on, our site is fully responsive and stories 
                     look beautiful on any screen.</p>
             </div>
             <div>
-                <img src={NoLimit} />
+                <img alt='no-limit' src={NoLimit} />
                 <h2>No Photo Upload Limit</h2>
                 <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share 
                     all of your stories in one go.</p>
             </div>
             <div>
-                <img src={embed} />
+                <img alt='embed' src={embed} />
                 <h2>Available to Embed</h2>
                 <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google 
                     Maps, and more. </p>
             </div>
             <div>
-                <img src={CustomDomain} />
+                <img alt='custom-domain' src={CustomDomain} />
                 <h2>Custom Domain</h2>
                 <p>With Photosnap subscriptions you can host your stories on your own domain. You can 
                     also remove our branding!</p>
             </div>
             <div>
-                <img src={Boost} />
+                <img alt='boost' src={Boost} />
                 <h2>Boost Your Exposure</h2>
                 <p>Users that viewed your story or gallery can easily get notifed of new and featured 
                     stories with our built in mailing list.</p>
             </div>
             <div>
-                <img src={DragDrop} />
+                <img alt='drag-drop' src={DragDrop} />
                 <h2>Drag & Drop Image</h2>
                 <p>Easily drag and drop your image and get beautiful shots everytime. No over the top 
                 tooling to add friction to creating stories.</p>
