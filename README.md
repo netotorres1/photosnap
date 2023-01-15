@@ -9,8 +9,10 @@ React | SASS | Typescript | HTML | CSS
 <h2>Project <a href="https://dashing-centaur-6af6b3.netlify.app/">link</a></h2>
 <hr>
 
-![photosnap1](https://user-images.githubusercontent.com/88563801/211187538-430bf69a-46d3-40b7-aca0-b0ee5b2d23b4.PNG)
 
-![photosnap3](https://user-images.githubusercontent.com/88563801/211187546-ffd7929a-ef42-4954-a729-5561d03cdf40.PNG)
+![CapaPhotosnap](https://user-images.githubusercontent.com/88563801/212519530-ea878fc1-3f43-4889-b47c-492b30910294.png)
 
-![photosnap2](https://user-images.githubusercontent.com/88563801/211187550-b69d036b-6718-48f6-9d8f-fd3e08769532.PNG)
+![capafooterphotosnap](https://user-images.githubusercontent.com/88563801/212519539-ae5e1272-cca1-44d3-bbcf-54a2324216a1.png)
+
+![mobilephotosnap](https://user-images.githubusercontent.com/88563801/212519552-a1efb678-83b0-4178-954d-8ee981f63e20.png)
+
